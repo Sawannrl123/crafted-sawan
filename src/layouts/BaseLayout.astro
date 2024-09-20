@@ -17,10 +17,23 @@ const {
 } = Astro.props;
 ---
 
-<!doctype html>
-<html lang="en" data-theme="lofi">
+<!-- 
+Theme List
+light|dark|cupcake|bumblebee|emerald|corporate
+|synthwave|retro|cyberpunk|valentine|halloween
+|garden|forest|aqua|lofi|pastel|fantasy|wireframe
+|black|luxury|dracula|cmyk|autumn|business|acid
+|lemonade|night|coffee|winter
+--><!doctype html>
+<html lang="en" data-theme="forest">
   <head>
-    <BaseHead title={title} description={description} image={image} , ogType={ogType} />
+    <BaseHead
+      title={title}
+      description={description}
+      image={image}
+      ,
+      ogType={ogType}
+    />
     {TRANSITION_API && <ViewTransitions />}
   </head>
   <body>
