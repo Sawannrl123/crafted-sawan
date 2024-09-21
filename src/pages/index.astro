@@ -51,10 +51,13 @@ const latest_projects = projects.slice(0, 3);
   </div>
 
   <div>
-    <h3 class="text-3xl w-full font-bold mb-2">My last projects {"</>"}</h3>
+    <div class="mb-2 flex items-center justify-between gap-2">
+    <h3 class="text-3xl w-full font-bold ">Latest Projects {"</>"}</h3>
+    <a class="btn btn-outline btn-sm" id="projects" href="/projects">View All</a>
+    </div>
     <ul>
       {
-        latest_projects.map((post) => (
+        latest_projects.map((post, idx) => (
           <li>
             <HorizontalCard
               title={post.data.title}
@@ -64,11 +67,14 @@ const latest_projects = projects.slice(0, 3);
               target="_self"
               badge={post.data.badge}
             />
-            <div class="divider my-0" />
+            {idx === latest_projects.length - 1 ? null : <div class="divider my-0" />}
           </li>
         ))
       }
     </ul>
+    <div class="mt-8 text-center">
+      <a class="btn btn-outline btn-lg" id="projects" href="/projects">View All</a>
+    </div>
   </div>
 
   <!-- <div>
