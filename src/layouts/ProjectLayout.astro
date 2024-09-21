@@ -1,0 +1,48 @@
+---
+import { type ProjectSchema } from "../content/config";
+import BaseLayout from "./BaseLayout.astro";
+
+export interface Props extends ProjectSchema {}
+
+const { title, description, heroImage, badge, tags = [], period } = Astro.props;
+
+import { Image } from "astro:assets";
+---
+
+<BaseLayout
+    title={title}
+    description={description}
+    image={heroImage}
+    ,
+    ogType="article"
+>
+    <main class="md:flex md:justify-center">
+        <article class="prose prose-lg prose-img:mx-auto max-w-[1200px]">
+            <div class="flex gap-4 items-center mb-4 md:flex-row flex-col">
+                <Image
+                    width={750}
+                    height={422}
+                    format="webp"
+                    src={heroImage}
+                    alt={title}
+                    class="w-48 h-auto !m-0"
+                />
+                <div class="space-y-1 md:w-auto w-full md:block flex items-center justify-between flex-col">
+                    <h1 class="title text-4xl font-bold mb-0">{title}</h1>
+                    <time class="block">{period}</time>
+                    <span class="badge badge-secondary my-1">{badge}</span>
+                </div>
+            </div>
+
+            {
+                tags && <ul class="flex flex-wrap gap-2 items-center p-0">
+                    {tags.map((tag) => (
+                        <li class="badge badge-ghost my-0">{tag}</li>
+                    ))}
+                    </ul>
+            }
+            <div class="divider my-2"></div>
+            <slot />
+        </article>
+    </main>
+</BaseLayout>

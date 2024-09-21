@@ -1,92 +1,280 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
+
+function shuffle(array: Array<string>) {
+  let currentIndex = array.length;
+
+  // While there remain elements to shuffle...
+  while (currentIndex != 0) {
+    // Pick a remaining element...
+    let randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex],
+      array[currentIndex],
+    ];
+  }
+
+  return array;
+}
+
+const skills = [
+  "Agile",
+  "SDLC",
+  "JIRA",
+  "Optimization",
+  "Responsivness",
+  "Troubleshooting",
+  "SEO",
+  "NewRelic",
+  "Sonarque",
+  "MFE",
+  "Web RTC",
+  "Socket",
+  "Management",
+  "Leader",
+  "i18n",
+  "Accessability",
+  "Sentry",
+  "Html",
+  "Css",
+  "Scss",
+  "Less",
+  "Tailwind",
+  "Material UI",
+  "Shadcn UI",
+  "Radix UI",
+  "Javascript",
+  "React",
+  "Angular 2+",
+  "Ionic",
+  "React Native",
+  "Jest",
+  "Cypress",
+  "NextJS",
+  "Redux",
+  "Zustand",
+  "Signal",
+  "Recoil",
+  "Context API",
+  "Webpack",
+  "Rollup",
+  "Vite",
+  "Gulp",
+  "Grunt",
+  "RTL",
+  "Huskey",
+  "Commitlint",
+  "Next-Auth",
+  "Ant Design",
+  "Typescript",
+  "Stripe",
+  "JusPay",
+  "tldraw",
+  "AWS",
+  "Jenkins",
+  "Github",
+  "Github Actions",
+  "CI/CD",
+  "Contentful",
+  "Astro",
+];
 ---
 
-<BaseLayout title="Resume" sideBarActiveItemID="cv">
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Profile</div>
-  </div>
+<BaseLayout title="Profile | Sawan Kumar" sideBarActiveItemID="cv">
+  <h2 class="text-3xl w-full font-bold mb-5">Profile</h2>
 
-  <div class="mb-10 text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </div>
+  <p class="mb-10 text-justify">
+    I am a highly skilled software engineer with over 9+ years of experience in
+    building and leading web and mobile applications across diverse industries.
+    I specialize in front-end technologies such as React, NextJS, Angular, and
+    Ionic, with strong expertise in back-end integrations, REST APIs,
+    WebSockets, and real-time features. I have successfully deployed apps with
+    features like QR code scanning, PWA support, and payment gateway
+    integrations. Additionally, I focus on performance optimizations, SEO
+    enhancements, and user-friendly interfaces, and I ensure smooth deployments
+    on platforms such as AWS, Play Store, and App Store.
+  </p>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Education</div>
-  </div>
+  <h4 class="text-3xl w-full font-bold mb-5">Education</h4>
 
   <div class="time-line-container grid gap-4 mb-10">
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+      title="B.Tech in Computer Science"
+      subtitle="Aug 2011 - May 2015 at Jaipur Engineering College And Research , Jaipur, Rajasthan"
     />
     <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
+      title="Senior Secondary in PCM"
+      subtitle="Apr 2009 - May 2011 at Gaya College , Gaya, Bihar"
+    />
+    <TimeLineElement
+      title="Secondary"
+      subtitle="Apr 2007 - Mar 2009 at T.Modal Inter School , Gaya, Bihar"
     />
   </div>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Experience</div>
-  </div>
+  <h4 class="text-3xl w-full font-bold mb-5">Experience</h4>
 
   <div class="time-line-container mb-10">
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Lead Software Engineer - Web | Pocket FM"
+      subtitle="Sep 2023 - Present at Pocket FM, Bangalore, Karnataka, India"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      <ul class="space-y-2 list-disc ml-6 mb-10">
+        <li>
+          <b>Individual Contributor:</b> Improving code quality, Platform enhancement,
+          PR Reviews, Feature development.
+        </li>
+        <li>
+          <b>Individual Growth Initiative:</b> Introduced a 1-on-1 call culture to
+          nurture individual career growth within the team.
+        </li>
+        <li>
+          <b>Development Workflow Improvements:</b> Corrected Git branching, Jira
+          ticketing, and release processes for streamlined development.
+        </li>
+        <li>
+          <b>Performance Optimisation:</b> Improved website performance by reducing
+          bundle size from 26MB to 5MB, optimising images, routes, and leveraging
+          native web APIs, increased lighthouse score from 50% to 80%.
+        </li>
+        <li>
+          <b>Team Leadership and Integration:</b> Currently leading a 10-person team,
+          integrated tools like Husky, Cypress, i18n, and ESLint for code quality,
+          testing, multilingual support, and code consistency.
+        </li>
+        <li>
+          <b>Project Owner:</b> Owing 4 projects from architecture to development
+          end to end.
+        </li>
+      </ul>
     </TimeLineElement>
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="SDE2 | Olx Autos"
+      subtitle="Aug 2021 - Sep 2023 at Olx Autos, Gurugram, Haryana, India"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      <ul class="space-y-2 list-disc ml-6 mb-10">
+        <li>
+          <b>Team Leadership:</b> Successfully managed a 5-person team, overseeing
+          collaboration and project execution.
+        </li>
+        <li>
+          <b>Component Library Migration:</b> Migrated the entire component library
+          into TypeScript, improving code maintainability and robustness.
+        </li>
+        <li>
+          <b>Integration Testing:</b> Wrote integration tests using Cypress for real
+          end-to-end testing, ensuring software reliability.
+        </li>
+        <li>
+          <b>Dynamic Page Layouts:</b> Handled dynamic page layouts for different
+          campaigns, optimising user experience.
+        </li>
+        <li>
+          <b>Package Upgrades:</b> Upgraded outdated and vulnerable packages to the
+          latest versions, enhancing security and performance.
+        </li>
+        <li>
+          <b>Individual Contributor:</b> Led the development of key front-end features
+          for the OLX platform, focusing on performance optimization and enhancing
+          user experience while independently managing complex tasks and collaborating
+          with cross-functional teams.
+        </li>
+      </ul>
     </TimeLineElement>
     <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+      title="Technical Analyst | Intersoft Data Labs"
+      subtitle="Oct 2020 - Aug 2021 at Intersoft Data Labs, Gurugram, Haryana, India"
     >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+      <ul class="space-y-2 list-disc ml-6 mb-10">
+        <li>
+          <b>Migration to Next.js:</b> Successfully migrated the React application
+          to Next.js, enhancing performance and scalability.
+        </li>
+        <li>
+          <b>Test Code Coverage:</b> Improved test code coverage from 70% to 90%,
+          ensuring comprehensive testing and robust code quality.
+        </li>
+        <li>
+          <b>Multi-Theme Support:</b> Managed multiple themes within the same codebase
+          for different regions, optimising regional customisation.
+        </li>
+        <li>
+          <b>Code Review Involvement:</b> Actively participated in code reviews,
+          contributing to the overall code quality and collaboration within the team.
+        </li>
+      </ul>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Software Engineer | Apollo 247"
+      subtitle="Feb 2020 - Oct 2020 at Apollo 247, Hyderabad, Telangana, India"
+    >
+      <ul class="space-y-2 list-disc ml-6 mb-10">
+        <li>
+          <b>Application Development and Integration:</b> Successfully integrated
+          PubNub for seamless audio/video calls and implemented a cough scanning
+          system using audio analysis. Architected three applications, including
+          an internal dashboard for optimized efficiency.
+        </li>
+        <li>
+          <b>Health and Engagement Systems:</b> Developed a chatbot system for analyzing
+          COVID-19 symptoms and enhancing user engagement. Integrated PhonePe switch
+          and Google Pay Business to provide secure payment options.
+        </li>
+        <li>
+          <b>Leadership and Real-Time Communication:</b> Led a 10-person team, overseeing
+          project execution and performance reviews. Implemented WebSocket for real-time
+          updates, ensuring users receive instant information.
+        </li>
+      </ul>
+    </TimeLineElement>
+    <TimeLineElement
+      title="Senior Frontend Developer | Auriga IT Consulting Pvt Ltd"
+      subtitle="Jul 2015 - Sep 2019 at Auriga IT Consulting Pvt Ltd, Jaipur, Rajasthan, India"
+    >
+      <ul class="space-y-2 list-disc ml-6 mb-10">
+        <li>Went onsite for project in Udacity and Pratham Software.</li>
+        <li>Involvement in the process improvement and implementation.</li>
+        <li>
+          Leading the Frontend team for the assigned project and involve in the
+          client requirement analysis.
+        </li>
+      </ul>
     </TimeLineElement>
   </div>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Certifications</div>
-  </div>
-
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
+  <h4 class="text-3xl w-full font-bold mb-5">Skills</h4>
+  <ul class="flex flex-wrap gap-2 items-center p-0 mb-10">
+    {
+      shuffle(skills).map((skill: string) => (
+        <li class="badge badge-ghost my-0">{skill}</li>
+      ))
+    }
   </ul>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
-  </div>
+  <h4 class="text-3xl w-full font-bold mb-5">Recognition and Awards</h4>
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>Brightest Star in 2019 on 10th Auriga's Foundation Day.</li>
+    <li>
+      Best code architecture in React Elite Hackathon held in Pratham Software.
+    </li>
+    <li>Lead by Example on Olx annula day, Goa 2022</li>
+  </ul>
 
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
+  <h4 class="text-3xl w-full font-bold mb-5">NPM Modules</h4>
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="https://www.npmjs.com/package/react-use-todo" target="_blank"
+        >react-use-todo</a
+      >
+    </li>
+    <li>
+      <a href="https://www.npmjs.com/package/react-secure-route" target="_blank"
+        >react-secure-route</a
+      >
+    </li>
   </ul>
 </BaseLayout>
