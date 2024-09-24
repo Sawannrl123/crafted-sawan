@@ -4,15 +4,15 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
 import createSlug from "../lib/createSlug";
 
-// const posts = (await getCollection("blog")).sort(
-//   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-// );
+const posts = (await getCollection("blog")).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
 
 const projects = (await getCollection("project")).sort(
   (a, b) => b.data.order - a.data.order,
 );
 
-// const last_posts = posts.slice(0, 3);
+const last_posts = posts.slice(0, 3);
 
 const latest_projects = projects.slice(0, 3);
 ---
@@ -52,8 +52,10 @@ const latest_projects = projects.slice(0, 3);
 
   <div>
     <div class="mb-2 flex items-center justify-between gap-2">
-    <h3 class="text-3xl w-full font-bold ">Latest Projects {"</>"}</h3>
-    <a class="btn btn-outline btn-sm" id="projects" href="/projects">View All</a>
+      <h3 class="text-3xl w-full font-bold">Latest Projects {"</>"}</h3>
+      <a class="btn btn-outline btn-sm" id="projects" href="/projects"
+        >View All</a
+      >
     </div>
     <ul>
       {
@@ -67,33 +69,51 @@ const latest_projects = projects.slice(0, 3);
               target="_self"
               badge={post.data.badge}
             />
-            {idx === latest_projects.length - 1 ? null : <div class="divider my-0" />}
+            {idx === latest_projects.length - 1 ? null : (
+              <div class="divider my-0" />
+            )}
           </li>
         ))
       }
     </ul>
     <div class="mt-8 text-center">
-      <a class="btn btn-outline btn-lg" id="projects" href="/projects">View All</a>
+      <a class="btn btn-outline btn-lg" id="projects" href="/projects"
+        >View All</a
+      >
     </div>
   </div>
 
-  <!-- <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
-  </div>
+  <div class="mt-20">
+    <div class="mb-2 flex items-center justify-between gap-2">
+      <h3 class="text-3xl w-full font-bold">Latest from blog</h3>
+      <!-- <a class="btn btn-outline btn-sm" id="blog" href="/blog">
+        View All
+      </a> -->
+    </div>
 
-  {
-    last_posts.map((post) => (
-      <>
-        <HorizontalCard
-          title={post.data.title}
-          img={post.data.heroImage}
-          desc={post.data.description}
-          url={"/blog/" + createSlug(post.data.title, post.slug)}
-          target="_self"
-          badge={post.data.badge}
-        />
-        <div class="divider my-0" />
-      </>
-    ))
-  } -->
+    <ul>
+      {
+        last_posts.map((post, idx) => (
+          <li>
+            <HorizontalCard
+              title={post.data.title}
+              img={post.data.heroImage}
+              desc={post.data.description}
+              url={"/blog/" + createSlug(post.data.title, post.slug)}
+              target="_self"
+              badge={post.data.badge}
+            />
+            {idx === last_posts.length - 1 ? null : (
+              <div class="divider my-0" />
+            )}
+          </li>
+        ))
+      }
+    </ul>
+    <!-- <div class="mt-8 text-center">
+      <a class="btn btn-outline btn-lg" id="blog" href="/blog"
+        >View All</a
+      >
+    </div> -->
+  </div>
 </BaseLayout>

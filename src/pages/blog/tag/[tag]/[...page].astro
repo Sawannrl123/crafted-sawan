@@ -26,9 +26,7 @@ const params = Astro.params;
 ---
 
 <BaseLayout title={"Blog - " + params.tag} sideBarActiveItemID="blog">
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Blog - {params.tag}</div>
-  </div>
+  <h3 class="text-3xl w-full font-bold mb-5">Blog - {params.tag}</h3>
   {
     page.data.length === 0 ? (
       <div class="bg-base-200 border-l-4 border-secondary w-full p-4 min-w-full">
@@ -37,8 +35,8 @@ const params = Astro.params;
       </div>
     ) : (
       <ul>
-        {page.data.map((post) => (
-          <>
+        {page.data.map((post, idx) => (
+          <li>
             <HorizontalCard
               title={post.data.title}
               img={post.data.heroImage}
@@ -48,8 +46,8 @@ const params = Astro.params;
               badge={post.data.badge}
               tags={post.data.tags}
             />
-            <div class="divider my-0" />
-          </>
+            {idx === page.data.length - 1 ? null : <div class="divider my-0" />}
+          </li>
         ))}
       </ul>
     )

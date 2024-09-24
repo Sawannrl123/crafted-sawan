@@ -1,6 +1,6 @@
 ---
 title: "Pocket FM"
-description: "Led significant performance optimization initiatives across multiple applications, reducing bundle size from 26MB to 5MB and enhancing user experience through caching and skeleton loading. Spearheaded the development of key modules like the payment system and contributed to creating new applications such as Newsroom and Ghostwriter. Fostered a collaborative team environment by guiding junior developers, implementing structured coding practices, and introducing a monthly retrospective to address team concerns. Championed best practices in project architecture and cross-team collaboration, while actively participating in hiring and mentorship processes."
+description: "Led the optimization and refactoring of a web platform, improving code efficiency by 25% and enhancing user experience with optimized video/audio player transitions, saving 13% in bandwidth. Boosted the Lighthouse score from 50% to 80%, reduced API load by 50%, and ensured 80% code coverage with tests, lowering production errors by 12%. Migrated the codebase to TypeScript, improving productivity by 15%, and standardized the UI with Tailwind, reducing bundle size by 10%. Led a team of 10, driving scalable project architecture and development efficiency."
 period: "Sep 2023 - Current"
 heroImage: "/projects-image/pocketfm-logo.png"
 badge: "Audio Platform"
@@ -16,18 +16,17 @@ I successfully migrated components to TypeScript, integrated modern technologies
 Through strategic improvements, cross-team collaboration, and a focus on user-centered design, I have contributed to creating accessible, high-performing applications that deliver value to our users while fostering a culture of continuous learning and improvement within the team.
 
 ## Work Highlights
-- **Performance Optimization:** Analyzed page load and bundle sizes, successfully reducing the bundle from 26MB to 5MB through strategic package management and image optimization.
-- **Package Management:** Removed unused and heavy packages, upgraded outdated packages, and addressed vulnerabilities to enhance application security and performance.
-- **Process Improvement:** Developed and implemented streamlined processes for release cycles and branching strategies to reduce developer effort and improve workflow efficiency.
-- **Team Leadership:** Led an 8-member team, providing guidance and support for professional development, while facilitating cross-team collaboration to unblock requirements.
-- **Critical Module Development:** Directed the development of revenue-centric modules, including a fully optimized payment system that improved the Lighthouse score.
-- **Tool Development:** Created a marketing tool for ad releases based on an add-ads.txt file structure, enhancing data management capabilities.
-- **Error Reduction:** Integrated Sentry for monitoring and reduced daily error counts through proactive error management strategies.
-- **Mentorship and Training:** Conducted interviews, hired 5 interns, and led training sessions to improve junior developers’ skills and overall team performance.
-- **Application Development:** Constructed 3 applications from scratch, including Newsroom, Ghostwriter, and PocketFM, ensuring they are fully accessible, responsive, and performant.
-- **Unit and Integration Testing:** Introduced unit and integration testing practices with a minimum code coverage target of 80% to ensure robust application quality.
-- **Mental Health Initiatives:** Started bi-weekly fun hour meetings to support team mental health and well-being.
-- **Learning and Adaptation:** Continuously explored new technologies, including Dart and Flutter, to benefit the company’s future projects.
+- **Code Optimization:** Identified redundant and non-standard code, breaking large components into smaller, manageable ones for easier testing. Achieved a 25% improvement in code efficiency.
+- **Modular Website Revamp:** Revamped website modules to ensure that development could continue smoothly without bottlenecks, improving the overall development process.
+- **Lighthouse Score Improvement:** Enhanced the website’s Lighthouse score from 50% to 80%, with continuous efforts to further optimize performance.
+- **Performance Enhancement:** Improved page performance by implementing caching using React-Query and service workers, reducing API load by 50%.
+- **Test Coverage and Code Quality:** Maintained a minimum code coverage of 80% through unit and integration tests, reducing production errors by 12%. Integrated Husky to ensure tests run before commits and SonarQube to block PR merges below 80% coverage for changed files.
+- **Production Error Tracking:** Introduced Sentry for tracking production errors, decreasing production issues by 20% and streamlining the resolution process.
+- **TypeScript Migration:** Migrated the codebase to TypeScript for improved type safety and prevention of runtime errors, increasing productivity and code quality by 15%.
+- **Tailwind & Shadcn Implementation:** Standardized the UI by integrating Tailwind and Shadcn, reducing duplicate CSS, improving development speed, and reducing bundle size by 10%. This also led to increased accessibility and SEO performance.
+- **Architecture Design:** Architected four scalable projects from scratch, ensuring long-term sustainability and capability to scale efficiently.
+- **Team Leadership:** Led a team of 10 members, handling requirements gathering, one-on-one discussions, goal setting, and aggressive PR reviews.
+- **Player Experience Improvement:** Improved user experience by optimizing transitions between mini and full video/audio players, using a single instance to reduce bandwidth usage by 13%.
 
 #### Tech Stack
 - **Frontend:** Next.js, React, Tailwind CSS, Shadcn, CSS, Zod, Zustand

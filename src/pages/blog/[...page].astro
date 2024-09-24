@@ -2,7 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import HorizontalCard from "../../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
-import createSlug from "../../lib/createSlug"
+import createSlug from "../../lib/createSlug";
 
 export async function getStaticPaths({ paginate }) {
   const posts = await getCollection("blog");
@@ -14,10 +14,7 @@ const { page } = Astro.props;
 ---
 
 <BaseLayout title="Blog" sideBarActiveItemID="blog">
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Blog</div>
-  </div>
-
+  <h3 class="text-3xl w-full font-bold mb-5">Blog</h3>
   {
     page.data.length === 0 ? (
       <div class="bg-base-200 border-l-4 border-secondary w-full p-4 min-w-full">
@@ -26,8 +23,8 @@ const { page } = Astro.props;
       </div>
     ) : (
       <ul>
-        {page.data.map((post) => (
-          <>
+        {page.data.map((post, idx) => (
+          <li>
             <HorizontalCard
               title={post.data.title}
               img={post.data.heroImage}
@@ -37,8 +34,8 @@ const { page } = Astro.props;
               badge={post.data.badge}
               tags={post.data.tags}
             />
-            <div class="divider my-0" />
-          </>
+            {idx === page.data.length - 1 ? null : <div class="divider my-0" />}
+          </li>
         ))}
       </ul>
     )
@@ -60,9 +57,7 @@ const { page } = Astro.props;
           </svg>{" "}
           Recent posts
         </a>
-      ) : (
-        <div />
-      )
+      ) : null
     }
     {
       page.url.next ? (
@@ -79,9 +74,7 @@ const { page } = Astro.props;
             <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
           </svg>
         </a>
-      ) : (
-        <div />
-      )
+      ) : null
     }
   </div>
 </BaseLayout>
