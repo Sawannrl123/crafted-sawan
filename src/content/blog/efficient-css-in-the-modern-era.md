@@ -24,6 +24,7 @@ For projects focused on efficiency and scalability, Tailwind CSS, along with its
 5.	**[@tailwindcss/animation:](https://www.npmjs.com/package/tailwindcss-animate)** Adds pre-defined animation utilities, such as animate-spin and animate-bounce, as well as customizable keyframes. This plugin allows developers to implement dynamic effects without writing custom CSS for each animation.
 6.	**[@tailwindcss-fluid:](https://fluid.tw/)** Enables fluid, responsive scaling of properties like font size, spacing, and layout dimensions. It allows elements to adapt proportionally as the viewport size changes, resulting in smoother, more responsive designs without relying on fixed breakpoints.
 7.	**[tailwind-merge:](https://www.npmjs.com/package/tailwind-merge)** This utility resolves conflicts in Tailwind class names by intelligently merging them. It ensures that conflicting classes (e.g., bg-red-500 vs. bg-blue-500) are handled correctly, keeping only the relevant class while eliminating redundant or duplicate values.
+8.	**[prettier-plugin-tailwindcss:](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier)** This plugin scans your templates for class attributes containing Tailwind CSS classes, and then sorts those classes automatically.
 
 By utilizing these plugins, you can make Tailwind CSS even more powerful, delivering clean, responsive, and highly optimized UIs. These tools help improve the efficiency of both development and runtime performance, ensuring that your CSS is as lightweight and scalable as possible.
 
