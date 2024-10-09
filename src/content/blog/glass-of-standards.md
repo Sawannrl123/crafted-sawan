@@ -63,7 +63,8 @@ PATTERN="^([A-Z]+-[0-9]+)-(feat|story|task|bug)-([a-z-]+)$"
 
 # Check if the branch name matches the pattern
 if ! [[ $BRANCH_NAME =~ $PATTERN ]]; then
-  echo "error: Invalid branch name format. Please follow the format: <ticketid>-(feat|story|task|bug)-<description> or use 'staging' branch"
+  echo "error: Invalid branch name format. 
+        Please follow the format: <ticketid>-(feat|story|task|bug)-<description>"
   exit 1
 fi
 
