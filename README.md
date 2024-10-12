@@ -1,12 +1,12 @@
-# Sawan Kumar | @sawannirala
+# Sawan Nirala | @sawannirala
 
-![Sawan Kumar | @sawannirala](public/profile.jpg)
+![Sawan Nirala | @sawannirala](public/profile.jpg)
 
 Lead Software Engineer with over 9+ years of experience building scalable web solutions using modern technologies like React, NextJs, and TypeScript. Currently leading a team at Pocket FM, I specialize in creating reusable, high-performance UIs and delivering quality software across multiple platforms.
 
 ## Demo
 
-View a live demo of [Sawan Kumar](https://4321-idx-crafted-sawangit-1726851403498.cluster-7ubberrabzh4qqy2g4z7wgxuw2.cloudworkstations.dev/)
+View a live demo of [Sawan Nirala](https://4321-idx-crafted-sawangit-1726851403498.cluster-7ubberrabzh4qqy2g4z7wgxuw2.cloudworkstations.dev/)
 
 ## Editor
 
