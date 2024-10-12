@@ -1,5 +1,5 @@
 ---
-title: "🚀 “GitHub Actions to the Rescue! 🛠️ Say Goodbye to Linting Nightmares and Failed Builds” 💥"
+title: "🚀 GitHub Actions to the Rescue! 🛠️ Say Goodbye to Linting Nightmares and Failed Builds 💥"
 description: "How to set up GitHub Actions for automating checks like linting, formatting, testing, and building in a frontend project. It details how to create a .yml workflow file to ensure code quality by running these checks on every push and how to enforce branch protection rules to disable the merge button until all checks pass. The article also covers the settings required to prevent bypassing these rules, ensuring code standards are maintained even if pre-commit hooks are skipped."
 pubDate: "Oct 12 2024"
 heroImage: "/blogs-images/github-actions-to-the-rescue.webp"
