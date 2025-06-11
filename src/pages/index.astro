@@ -5,11 +5,11 @@ import { getCollection } from "astro:content";
 import createSlug from "../lib/createSlug";
 
 const posts = (await getCollection("blog")).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 
 const projects = (await getCollection("project")).sort(
-  (a, b) => b.data.order - a.data.order,
+  (a, b) => b.data.order - a.data.order
 );
 
 const last_posts = posts.slice(0, 3);
@@ -24,7 +24,7 @@ const latest_projects = projects.slice(0, 3);
     <h3 class="text-3xl py-3 font-bold">Lead Software Engineer | Frontend</h3>
     <div class="py-2">
       <text class="text-lg">
-        I'm a Lead Software Engineer with over 9+ years of experience building
+        I'm a Lead Software Engineer with over 10+ years of experience building
         scalable web solutions using modern technologies like React, NextJs, and
         TypeScript. Currently leading a team at <b>Pocket FM</b>, I specialize
         in creating reusable, high-performance UIs and delivering quality
@@ -40,7 +40,7 @@ const latest_projects = projects.slice(0, 3);
         Let's connect!</a
       >
       <a
-        href="https://drive.google.com/file/d/1MGuG1TyHCsYn1NjO1141UAiFAXU4zOHk/view?usp=sharing"
+        href="https://drive.google.com/file/d/1dXnhc7JJw3L-hIpj7bQoBaFMmxmdRE2N/view?usp=sharing"
         target="_blank"
         class="btn btn-outline ml-5"
         download=""
@@ -86,9 +86,7 @@ const latest_projects = projects.slice(0, 3);
   <div class="mt-20">
     <div class="mb-2 flex items-center justify-between gap-2">
       <h3 class="text-3xl w-full font-bold">Latest from blog</h3>
-      <!-- <a class="btn btn-outline btn-sm" id="blog" href="/blog">
-        View All
-      </a> -->
+      <a class="btn btn-outline btn-sm" id="blog" href="/blog"> View All </a>
     </div>
 
     <ul>
@@ -110,10 +108,8 @@ const latest_projects = projects.slice(0, 3);
         ))
       }
     </ul>
-    <!-- <div class="mt-8 text-center">
-      <a class="btn btn-outline btn-lg" id="blog" href="/blog"
-        >View All</a
-      >
-    </div> -->
+    <div class="mt-8 text-center">
+      <a class="btn btn-outline btn-lg" id="blog" href="/blog">View All</a>
+    </div>
   </div>
 </BaseLayout>

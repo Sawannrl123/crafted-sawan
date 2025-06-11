@@ -1,44 +1,50 @@
 ---
 title: "Pocket FM"
-description: "Led the optimization and refactoring of a web platform, improving code efficiency by 25% and enhancing user experience with optimized video/audio player transitions, saving 13% in bandwidth. Boosted the Lighthouse score from 50% to 80%, reduced API load by 50%, and ensured 80% code coverage with tests, lowering production errors by 12%. Migrated the codebase to TypeScript, improving productivity by 15%, and standardized the UI with Tailwind, reducing bundle size by 10%. Led a team of 10, driving scalable project architecture and development efficiency."
-period: "Sep 2023 - Current"
+description: "Led the optimization and refactoring of a large-scale web platform, improving code efficiency by 25% and enhancing user experience with optimized video/audio player transitions, reducing bandwidth usage by 13%. Increased Lighthouse score from 50% to 80%, cut API load by 50%, and maintained 80%+ test coverage, reducing production errors by 12%. Migrated the codebase to TypeScript for better type safety and 15% gain in productivity. Standardized the UI with Tailwind, reducing bundle size by 10%, and led a 10-member team, driving scalable architecture and development excellence across multiple projects."
+period: "Sep 2023 - Jul 2025"
 heroImage: "/projects-image/pocketfm-logo.png"
 badge: "Audio Platform"
 order: 12
-tags: [Next.js, React, Tailwind CSS, Shadcn, CSS, Zod, Zustand, REST APIs, Webhooks, Python, PostgreSQL, Github, Jira, CI/CD, Docker, Kubernetes, Sentry, Cypress, Jest, React Testing Library (RTL), Datadog, AWS, Performance Tools, SonarQube]
+tags: [Next.js, React, Tailwind CSS, Shadcn, CSS, Zod, Zustand, REST APIs, Webhooks, Python, PostgreSQL, Github, Jira, CI/CD, Docker, Kubernetes, Sentry, Cypress, Jest, React Testing Library (RTL), Datadog, AWS, Performance Tools, SonarQube, Tanstack, PlateJs, Mux, Google Console, Google Analytics, Shaka Player]
 ---
 
 # [Pocket FM](https://pocketfm.com/)
-During my tenure at **PocketFM**, I have played a pivotal role in optimizing and enhancing multiple projects, including the Newsroom, Ghostwriter, and PocketFM applications. By implementing performance optimizations, reducing bundle sizes significantly, and enhancing user experience, I improved the overall efficiency and responsiveness of our platforms. As a team lead, I focused on mentoring junior developers, fostering a collaborative environment, and instituting effective processes for project management and code quality.
+During my tenure at **PocketFM**, I’ve been instrumental in leading the architecture and optimization of multiple high-impact projects including **Newsroom**, **Ghostwriter**, and the core **PocketFM web platform**. My focus has been on building scalable, performant, and secure systems while mentoring a growing frontend team and enabling a high-performance engineering culture.
 
-I successfully migrated components to TypeScript, integrated modern technologies like Tailwind and Shadcn, and introduced structured coding practices, which collectively enhanced code maintainability and robustness. My commitment to team well-being and professional development included initiating regular retrospectives and fun meetings to improve morale.
+I led frontend initiatives that resulted in a **5x reduction in bundle size**, a **30% improvement in load time**, and a **significant uplift in Lighthouse scores**—from 50% to over 80%. Through the creation of a **component library with CLI tooling and documentation**, I established a shared design system (Aural UI), accelerating development and standardizing UI/UX across multiple teams.
 
-Through strategic improvements, cross-team collaboration, and a focus on user-centered design, I have contributed to creating accessible, high-performing applications that deliver value to our users while fostering a culture of continuous learning and improvement within the team.
+In addition to performance, I implemented robust **monitoring and alerting infrastructure** using **Sentry**, **Datadog**, **Mux**, and **GA**, enabling fast detection and resolution of production issues. I also contributed to **securing the frontend stack**, adopted **type-safe development with TypeScript**, and introduced **best practices for CI/CD, accessibility, and SEO**.
+
+As a tech lead, I managed a **10-member team**, driving key initiatives, conducting regular 1-on-1s, aligning career goals, and fostering a collaborative environment with weekly retrospectives and async demos.
 
 ## Work Highlights
-- **Code Optimization:** Identified redundant and non-standard code, breaking large components into smaller, manageable ones for easier testing. Achieved a 25% improvement in code efficiency.
-- **Modular Website Revamp:** Revamped website modules to ensure that development could continue smoothly without bottlenecks, improving the overall development process.
-- **Lighthouse Score Improvement:** Enhanced the website’s Lighthouse score from 50% to 80%, with continuous efforts to further optimize performance.
-- **Performance Enhancement:** Improved page performance by implementing caching using React-Query and service workers, reducing API load by 50%.
-- **Test Coverage and Code Quality:** Maintained a minimum code coverage of 80% through unit and integration tests, reducing production errors by 12%. Integrated Husky to ensure tests run before commits and SonarQube to block PR merges below 80% coverage for changed files.
-- **Production Error Tracking:** Introduced Sentry for tracking production errors, decreasing production issues by 20% and streamlining the resolution process.
-- **TypeScript Migration:** Migrated the codebase to TypeScript for improved type safety and prevention of runtime errors, increasing productivity and code quality by 15%.
-- **Tailwind & Shadcn Implementation:** Standardized the UI by integrating Tailwind and Shadcn, reducing duplicate CSS, improving development speed, and reducing bundle size by 10%. This also led to increased accessibility and SEO performance.
-- **Architecture Design:** Architected four scalable projects from scratch, ensuring long-term sustainability and capability to scale efficiently.
-- **Team Leadership:** Led a team of 10 members, handling requirements gathering, one-on-one discussions, goal setting, and aggressive PR reviews.
-- **Player Experience Improvement:** Improved user experience by optimizing transitions between mini and full video/audio players, using a single instance to reduce bandwidth usage by 13%.
+- **Code Optimization:** Improved code efficiency by 25% through modularization, eliminating redundancy, and enforcing scalable component architecture.
+- **Design System Development:** Built and maintained a custom component library (**Aural UI**) with CLI tools and documentation ([aural-ui.netlify.app](https://aural-ui.netlify.app)), improving design consistency and dev velocity.
+- **Performance Engineering:** Reduced bundle size from 26MB to 5MB, implemented route-level code splitting, React-Query caching, and service workers, cutting API load by 50%.
+- **Player Experience:** Re-architected the mini/full player using a single shared instance, enhancing transitions and reducing bandwidth usage by 13%. Overall player score improved from **40% to 85%**.
+- **Lighthouse & Web Vitals:** Raised Lighthouse scores from 50% to 80%+ through lazy loading, native API usage, and media optimization.
+- **Type Safety:** Migrated the entire codebase to **TypeScript**, improving maintainability, reducing bugs, and boosting productivity by 15%.
+- **Modern UI Stack:** Standardized frontend with **TailwindCSS** and **Shadcn**, cutting CSS redundancy by 10% and improving accessibility & SEO.
+- **Monitoring & Alerting:** Integrated **Sentry**, **Datadog**, **Mux**, and **Google Analytics** for production visibility, reducing incidents by 20% and improving MTTR.
+- **Security Focus:** Enforced secure headers, input sanitization, and CSP to protect against XSS/CSRF threats.
+- **Scalable Architecture:** Led the architecture of 4 greenfield projects using scalable patterns and monorepo tooling, enabling future-ready growth.
+- **Web-to-App Funnel:** Integrated **AppsFlyer** to track and optimize web-to-app journeys, boosting attribution and ad campaign efficiency.
+- **Engineering Leadership:** Managed and mentored a 10-member team with structured 1-on-1s, aggressive PR reviews, and roadmap alignment across stakeholders.
+
 
 #### Tech Stack
-- **Frontend:** Next.js, React, Tailwind CSS, Shadcn, CSS, Zod, Zustand
-- **Backend:** REST APIs, Webhooks, Python, PostgreSQL
-- **Tools:** Github, Jira
-- **CI/CD:** Jenkins, Docker, Kubernetes
-- **Testing:** Sentry, Cypress, Jest, React Testing Library (RTL)
-- **Monitoring & Performance:** Datadog, AWS, Performance Tools, SonarQube
+- **Frontend:** Next.js, React, Tailwind CSS, Shadcn, CSS, Zod, Zustand, Tanstack, Nuqs, React Form, Shaka Player
+- **Backend:** REST APIs, Webhooks, Python, PostgreSQL, Socket
+- **Tools:** Github, Jira, Confluance, AWS
+- **CI/CD:** Jenkins, Docker, Kubernetes, Argo, Checkly, Github Action
+- **Testing:** Cypress, Jest, React Testing Library (RTL), Playwrite
+- **Monitoring & Performance:** Datadog, AWS, Performance Tools, SonarQube, Mux, Google Analytics, Google Console, Sentry, Prometheus, Grafana
 
 #### Websites
-- [Newsroom](https://newsroom.pocketfm.com/)
-- [Ghostwriter](https://ghost-writer.ai/)
-- [PocketFM](https://pocketfm.com/)
+- [Copilot](https://copilot.pocketfm.com/)
+- [Pocket FM](https://pocketfm.com/)
+- [Blaze](https://blaze.pockettoons.com/)
+- [Pocket Toons](https://pocket-toons.com/)
+- [Pocket Novels](https://pocketnovel.com/)
 
 

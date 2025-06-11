@@ -2,7 +2,7 @@
   "name": "crafted-sawan",
   "description": "crafted-sawan is a personal portfolio showcasing my journey as a web developer. Explore projects that highlight my skills in front-end, back-end, and full-stack development. Featuring clean code, responsive designs, and modern technologies, this repo reflects my passion for creating seamless digital experiences.",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "dev": "astro dev",
