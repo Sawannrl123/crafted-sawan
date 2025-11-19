@@ -1,6 +1,6 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 function shuffle(array: Array<string>) {
   let currentIndex = array.length;
@@ -84,6 +84,14 @@ const skills = [
   "PlateJs",
   "Tanstack",
   "Framer Motion",
+  "Kibana",
+  "Tabalu",
+  "Whatap",
+  "Elastic Search",
+  "Stroybook",
+  "Figma",
+  "Google Analytics",
+  "Google Console",
 ];
 ---
 
@@ -146,6 +154,54 @@ const skills = [
   <h4 class="text-3xl w-full font-bold mb-5">Experience</h4>
 
   <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Lead Software Engineer - Web | True Balance"
+      subtitle="Jul 2025 - Current at True Balance, Gurugram, Haryana, India"
+    >
+      <ul class="space-y-2 list-disc ml-6 mb-10">
+        <li>
+          <b>Mission-Critical Web Journeys:</b> Architected KYC, Lending Insights
+          Partner, lead generation, and Account Aggregator modules embedded across
+          Android and iOS without app-store releases.
+        </li>
+        <li>
+          <b>Loan Disbursal Impact:</b> Enabled configurable, data-driven user flows
+          that lifted loan disbursals by 50%+ through rapid experimentation and
+          compliance-ready journeys.
+        </li>
+        <li>
+          <b>Modular Performance:</b> Refactored the Next.js codebase with route-level
+          code splitting, dependency audits, and caching to cut bundle size and load
+          times while scaling traffic.
+        </li>
+        <li>
+          <b>Type-Safe Engineering:</b> Established TypeScript-first patterns,
+          accessibility/SEO checks, and linting to keep the frontend future-ready and
+          reliable.
+        </li>
+        <li>
+          <b>Design System & UX:</b> Built a reusable UI library backed by Figma and
+          Storybook, standardizing visual language and accelerating feature delivery.
+        </li>
+        <li>
+          <b>Automated Quality:</b> Set up Cypress, Jest, and RTL suites plus
+          Docker/Kubernetes-powered CI/CD (Jenkins, GitHub Actions) for predictable,
+          automated releases.
+        </li>
+        <li>
+          <b>Monitoring & Observability:</b> Integrated Sentry, Whatap, Kibana, Tabalu,
+          and Google Analytics for real-time telemetry and faster incident response.
+        </li>
+        <li>
+          <b>Security & Compliance:</b> Enforced CSP, secure headers, and robust input
+          sanitization to safeguard sensitive fintech workflows.
+        </li>
+        <li>
+          <b>Leadership & Mentorship:</b> Led and mentored a 2-member frontend team,
+          running 1:1s, async demos, and retros to drive delivery and growth.
+        </li>
+      </ul>
+    </TimeLineElement>
     <TimeLineElement
       title="Lead Software Engineer - Web | Pocket FM"
       subtitle="Sep 2023 - Jul 2025 at Pocket FM, Bangalore, Karnataka, India"

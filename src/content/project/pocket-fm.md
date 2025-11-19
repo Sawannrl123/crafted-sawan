@@ -5,10 +5,43 @@ period: "Sep 2023 - Jul 2025"
 heroImage: "/projects-image/pocketfm-logo.png"
 badge: "Audio Platform"
 order: 12
-tags: [Next.js, React, Tailwind CSS, Shadcn, CSS, Zod, Zustand, REST APIs, Webhooks, Python, PostgreSQL, Github, Jira, CI/CD, Docker, Kubernetes, Sentry, Cypress, Jest, React Testing Library (RTL), Datadog, AWS, Performance Tools, SonarQube, Tanstack, PlateJs, Mux, Google Console, Google Analytics, Shaka Player]
+tags:
+  [
+    Next.js,
+    React,
+    Tailwind CSS,
+    Shadcn,
+    CSS,
+    Zod,
+    Zustand,
+    REST APIs,
+    Webhooks,
+    Python,
+    PostgreSQL,
+    Github,
+    Jira,
+    CI/CD,
+    Docker,
+    Kubernetes,
+    Sentry,
+    Cypress,
+    Jest,
+    React Testing Library (RTL),
+    Datadog,
+    AWS,
+    Performance Tools,
+    SonarQube,
+    Tanstack,
+    PlateJs,
+    Mux,
+    Google Console,
+    Google Analytics,
+    Shaka Player,
+  ]
 ---
 
 # [Pocket FM](https://pocketfm.com/)
+
 During my tenure at **PocketFM**, I’ve been instrumental in leading the architecture and optimization of multiple high-impact projects including **Newsroom**, **Ghostwriter**, and the core **PocketFM web platform**. My focus has been on building scalable, performant, and secure systems while mentoring a growing frontend team and enabling a high-performance engineering culture.
 
 I led frontend initiatives that resulted in a **5x reduction in bundle size**, a **30% improvement in load time**, and a **significant uplift in Lighthouse scores**—from 50% to over 80%. Through the creation of a **component library with CLI tooling and documentation**, I established a shared design system (Aural UI), accelerating development and standardizing UI/UX across multiple teams.
@@ -18,6 +51,7 @@ In addition to performance, I implemented robust **monitoring and alerting infra
 As a tech lead, I managed a **10-member team**, driving key initiatives, conducting regular 1-on-1s, aligning career goals, and fostering a collaborative environment with weekly retrospectives and async demos.
 
 ## Work Highlights
+
 - **Code Optimization:** Improved code efficiency by 25% through modularization, eliminating redundancy, and enforcing scalable component architecture.
 - **Design System Development:** Built and maintained a custom component library (**Aural UI**) with CLI tools and documentation ([aural-ui.netlify.app](https://aural-ui.netlify.app)), improving design consistency and dev velocity.
 - **Performance Engineering:** Reduced bundle size from 26MB to 5MB, implemented route-level code splitting, React-Query caching, and service workers, cutting API load by 50%.
@@ -31,8 +65,8 @@ As a tech lead, I managed a **10-member team**, driving key initiatives, conduct
 - **Web-to-App Funnel:** Integrated **AppsFlyer** to track and optimize web-to-app journeys, boosting attribution and ad campaign efficiency.
 - **Engineering Leadership:** Managed and mentored a 10-member team with structured 1-on-1s, aggressive PR reviews, and roadmap alignment across stakeholders.
 
-
 #### Tech Stack
+
 - **Frontend:** Next.js, React, Tailwind CSS, Shadcn, CSS, Zod, Zustand, Tanstack, Nuqs, React Form, Shaka Player
 - **Backend:** REST APIs, Webhooks, Python, PostgreSQL, Socket
 - **Tools:** Github, Jira, Confluance, AWS
@@ -41,10 +75,10 @@ As a tech lead, I managed a **10-member team**, driving key initiatives, conduct
 - **Monitoring & Performance:** Datadog, AWS, Performance Tools, SonarQube, Mux, Google Analytics, Google Console, Sentry, Prometheus, Grafana
 
 #### Websites
+
 - [Copilot](https://copilot.pocketfm.com/)
 - [Pocket FM](https://pocketfm.com/)
 - [Blaze](https://blaze.pockettoons.com/)
 - [Pocket Toons](https://pocket-toons.com/)
 - [Pocket Novels](https://pocketnovel.com/)
-
-
+- [Pocket Xtra](https://xtra.pocketfm.com/)
